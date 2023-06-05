@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="logoAndTitle">
+            <img id="logo" src="/img/main_img/logo.png" alt="로고">
+            <h1>오늘 한 잔</h1>
+        </div>
+    </header>
+    <form id="login-form" action="/login" method="POST">
+        <div class="wrap">
+            <h2>로그인</h2>
+            <div class="id">
+                <h3>아이디</h3>
+                <input type="text" name="id" id="id" placeholder="ㅤ아이디를 입력하세요">
+            </div>
+            <div class="pw">
+                <h3>비밀번호</h3>
+                <input type="password" name="pw" id="pw" placeholder="ㅤ비밀번호를 입력하세요">
+            </div>
+            <div class="signUp">
+                <p>아직 회원이 아니신가요? <a href="/signUpPage"> 회원가입</a></p>
+            </div>
+            <div class="submit">
+                <input type="submit" id="login" value="로그인">
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

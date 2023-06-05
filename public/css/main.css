@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: left;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logoAndTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo {
+  width: 4em;
+  height: auto;
+  margin-right: 0.3em;
+}
+
+#userInfo {
+  position: absolute;
+  top: 40px;
+  right: 90px;
+  font-weight: bold;
+}
+
+a {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1em;
+}
+
+.image-container {
+  padding-top: 0.5em;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.image-container img {
+  width: 200%;
+  height: auto;
+  display: block;
+}
+
+.button-container {
+  width: 100%;
+  display: inline-flex;
+  vertical-align: top;
+  text-align: center;
+}
+
+.button-container>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.button-container>div:first-child {
+  justify-content: flex-start;
+}
+
+.button-container>div:last-child {
+  justify-content: flex-end;
+}
+
+button {
+  border: none;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0.5em;
+  flex: 1;
+}
+
+button img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+}
+
+button span {
+  font-size: large;
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+}

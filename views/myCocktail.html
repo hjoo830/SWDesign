@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>나만의 칵테일</title>
+  <link rel="stylesheet" type="text/css" href="css/myCocktail.css">
+</head>
+
+<body>
+  <header>
+    <div id="logoAndTitle">
+      <img id="logo" src="/img/main_img/logo.png" alt="로고">
+      <h1>오늘 한 잔</h1>
+    </div>
+    <button class="myCocktailAdd">
+      <span>추가하기</span>
+    </button>
+  </header>
+  <div class="main-container">
+    <main>
+      <div class="myCocktail-container">
+      </div>
+    </main>
+  </div>
+  <div id="addCocktailModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>나만의 칵테일 추가</h2>
+      <form id="addCocktailForm">
+        <p><label for="name">이름:ㅤ</label>
+          <input type="text" id="name" required>
+        </p>
+        <p><label for="recipe">레시피:</label>
+          <textarea id="recipe" required></textarea>
+        </p>
+        <p><label for="image">사진:ㅤ</label>
+          <input type="file" id="image" accept="image/*" required>
+        </p>
+        <button type="submit">추가하기</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/myCocktail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  text-align: left;
+  padding: 1em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logoAndTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo {
+  width: 4em;
+  height: auto;
+  margin-right: 0.3em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main {
+  margin: 5%;
+}
+
+.cocktailByLiqueur-container {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.cocktail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  padding: 0.5em;
+  width: 18%;
+  text-align: center;
+  position: relative;
+  height: 280px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cocktail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding-bottom: 10px;
+}
+
+.cocktail p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1200px) {
+  .cocktail {
+    width: 18%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .cocktail {
+    margin-bottom: 30px;
+  }
+
+  .main-container {
+    padding: 0 100px;
+  }
+}

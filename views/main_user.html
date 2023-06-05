@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>오늘 한 잔</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="js/main_user.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="logoAndTitle">
+      <img id="logo" src="/img/main_img/logo.png" alt="로고">
+      <h1>오늘 한 잔</h1>
+    </div>
+    <div id="userInfo">
+      <span id="username"></span>님
+    </div>
+    <a href="#" id="loginButton" onclick="location.href='/mainPage'">로그아웃</a>
+  </header>
+  <main>
+    <div class="image-container">
+      <img src="/img/main_img/cocktailbanner.jpg" alt="이미지">
+    </div>
+    <div class="button-container">
+      <div>
+        <button class="cocktail">
+          <img src="/img/main_img/main_cocktail.jpg" alt="칵테일">
+          <span>칵테일</span>
+        </button>
+        <button class="liqueur">
+          <img src="/img/main_img/main_liqueur.jpg" alt="양주">
+          <span>양주</span>
+        </button>
+        <button class="easyCocktail">
+          <img src="/img/main_img/main_easy.jpg" alt="간편칵테일">
+          <span>간편 칵테일</span>
+        </button>
+        <button class="myCocktail">
+          <img src="/img/main_img/main_my.png" alt="나만의 칵테일">
+          <span>나만의 칵테일</span>
+        </button>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript">
+    var username = localStorage.getItem("username");
+    document.getElementById("username").innerText = username || "";
+  </script>
+</body>
+
+</html>
