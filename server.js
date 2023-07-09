@@ -52,7 +52,7 @@ app.get('/loginPage', (req, res) => {
 })
 
 app.get('/mainPage', (req, res) => {
-  res.render('main.html');
+  res.render('index.html');
 })
 
 app.get('/main_userPage', (req, res) => {
